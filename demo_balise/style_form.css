@@ -1,0 +1,34 @@
+* {
+    margin : 0;
+}
+
+.utilisateur1{
+    position : absolute;
+    top : 0px;
+    right: 275px;
+}
+
+.utilisateur2{
+    position : absolute;
+    top : 20px;
+    right: 100px;
+    line-height: 30px;
+}
+
+form{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+label{
+    display: block;
+    margin-bottom: 5px;
+}
+
+div{
+    display : flex;
+    flex-direction: column;
+}

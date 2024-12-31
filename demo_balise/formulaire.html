@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulaire Daft Punk</title>
+    <link rel="stylesheet" href="style_form.css">
+</head>
+<body>
+    <img src="/demo_balise/log_DaftPunk.jpg" alt="My_music" style="width:200px;height:200px"/>
+    <h1 id="mon_ancre">Les Daft Punk</h1>
+    <br>
+    <img class= "utilisateur1" src="/demo_balise/avatar.png" alt="avatar"  style="width:100px;height:100px"/>
+    <p class="utilisateur2">
+        Denis, connecté <br>
+        <a href="adresse de redirection">Mon compte</a>
+        <a href="adresse de redirection">Déconnexion</a>
+    </p>
+    <p>Exemple formulaire</p>
+    <br>
+    <h2>Mon compte</h2>
+    <br>
+    <fieldset>
+        <legend>Vos informations personnelles </legend>
+    <form method="post">
+        <div class="info">
+            <label for="nom" >Nom : </label><br>
+            <input type="texc" name="nom" id="nom" placeholder="Votre nom ?" >
+            <br>
+        </div>
+
+        <div class="info">
+            <label for="ddn">Date de naissance : </label><br>
+            <input type="date" name="ddn" id="ddn">
+            <br>
+        </div>
+
+        <div>
+            <label for="prenom" class="info">Prénom : </label><br>
+            <input class="info" type="texc" name="prenom" id="prenom" placeholder="Votre prénom ?" >
+            <br>
+        </div>
+
+        <div >
+            <label for="groupe">Groupe préféré :</label><br>
+            <select name="groupe" id="groupe">
+                <option value="groupe1">Epica</option>
+                <option value="groupe2">Emile et Image</option>
+            </select><br>
+        </div>
+        
+        <div >
+            <label for="email">Email : </label><br>
+            <input type="email" name="email" id="email" placeholder="Votre email ?">
+            <br>
+        </div>
+
+        <div >
+            <label for="tel">Téléphone ? : </label><br>
+            <input type="tel" name="tel" id="tel" maxlength="10" placeholder="Votre téléphone ?" >
+            <br>
+        </div>
+
+        <div >
+            <label for="mdp" >Mot de passe : </label><br>
+            <input type="password" name="mdp" id="mdp">
+            <br>
+        </div>
+
+        <div>
+            <label for="mdp2" >Répéter votre mot de passe : </label><br>
+            <input type="password" name="mdp2" id="mdp2">
+            <br>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Votre formule abonnement </legend>
+        <div>
+            <table>
+                <tbody align="center">
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>
+                            <input type="radio" name="abo" id="abo1" checked="checked">
+                            <label for="premium+"><b>Premium+</b></label>
+                        </td>
+                        <td>    
+                            <input type="radio" name="abo" id="abo2">
+                            <label for="premium"><b>Premium</b></label>
+                        </td>
+                        <td>
+                            <input type="radio" name="abo" id="abo3">
+                            <label for="discovery"><b>Discovery</b></label>
+                        </td>
+                    <tr>
+                        <td><b>Accès web</b></td>
+                        <td><img src="/demo_balise/V.jfif" alt="V" style="width:50px;height:50px"/></td>
+                        <td><img src="/demo_balise/V.jfif" alt="V" style="width:50px;height:50px"/></td>
+                        <td><img src="/demo_balise/V.jfif" alt="V" style="width:50px;height:50px"/></td>
+                    </tr>
+                    <tr>
+                        <td><b>Accès mobile</b></td>
+                        <td><img src="/demo_balise/V.jfif" alt="V" style="width:50px;height:50px"/></td>
+                        <td><img src="/demo_balise/V.jfif" alt="V" style="width:50px;height:50px"/></td>
+                        <td><img src="/demo_balise/X.png" alt="X" style="width:50px;height:50px"/></td>
+                    </tr>
+                    <tr>
+                        <td><b>Ecoute illimité</b></td>
+                        <td><img src="/demo_balise/V.jfif" alt="V" style="width:50px;height:50px"/></td>
+                        <td><img src="/demo_balise/X.png" alt="X" style="width:50px;height:50px"/></td>
+                        <td><img src="/demo_balise/X.png" alt="X" style="width:50px;height:50px"/></td>
+                    </tr>
+                    <tr>
+                        <td><b>Tarifs</b></td>
+                        <td>11,99€/mois</td>
+                        <td>5,99€/mois</td>
+                        <td>Gratuit 1 mois</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>
+                            <input type="checkbox" name="newsletter1" id="newsletter1" checked="checked">
+                            <label for="newsletter1">Recevoir nos newsletters</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" name="newsletter2" id="newsletter2" checked="checked">
+                            <label for="newsletter2">Recevoir les newsletters de nos partenaires</label>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </fieldset>   
+        <div align="center">
+            <input type="reset" value="Annuler">
+            <input type="submit" value="Valider">
+        </div>
+    </form>
+    <hr>
+    <p>Page 1/3</p>
+</body>
+</html>
